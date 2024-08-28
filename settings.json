@@ -1,0 +1,67 @@
+{
+  "language": "en",
+  "seekerAuthUrl": "https://discord.com/oauth2/authorize?client_id=1087083964432404590&response_type=code&redirect_uri=https%3A%2F%2Fapi.serverseeker.net%2Flocal_redirect&scope=identify&state=MCPtool:7637",
+  "seekerApiKey": "",
+  "seekerApiUrl": "https://api.serverseeker.net",
+  "serverStatusGetMode": "local",
+  "serverShowMode": "simple",
+  "discordPresence": true,
+  "commandLogs": {
+    "enabled": true,
+    "serverCommandLogs": false,
+    "uuidCommandLogs": false,
+    "ipInfoCommandLogs": false,
+    "ipHistoryCommandLogs": true,
+    "dnsRecordsCommandLogs": false,
+    "checkerCommandLogs": true,
+    "subdomainsCommandLogs": true,
+    "seekerCommandLogs": true,
+    "webSearchCommandLogs": true,
+    "scanCommandLogs": true,
+    "listeningCommandLogs": true
+  },
+  "scanner": {
+    "nmap": {
+      "command": "%nmapCommand% -p %ports% -n -T5 -Pn -vvv -sS %target%"
+    },
+    "old_qubo": {
+      "command": "java -Dfile.encoding=UTF-8 -jar old_qubo.jar -range %target% -ports %ports% -th 500 -ti 2000"
+    },
+    "qubo": {
+      "command": "java -Dfile.encoding=UTF-8 -jar qubo.jar -i %target% -p %ports% -t 2000"
+    },
+    "masscan": {
+      "command": "%masscanCommand% --wait 0 -p %ports% --rate 5000 %target%"
+    },
+    "pyScanner": {
+      "threads": 500,
+      "timeout": 2
+    },
+    "customPortRange": {
+      "example1": "25560-25590"
+    }
+  },
+  "threads": {
+    "checkerCommandThreads": 15,
+    "subdomainsCommandThreads": 300,
+    "webSearchCommandThreads": 15
+  },
+  "velocityProxy": {
+    "velocityVersion": "",
+    "fakeproxyVersion": "",
+    "velocityPort": "25580",
+    "fakeproxyPort": "33330"
+  },
+  "sendcmd": {
+    "reconnectDelay": 4000,
+    "commandDelay": 2000
+  },
+  "hideIpPort": 55505,
+  "nmapCommand": "nmap",
+  "masscanCommand": "masscan",
+  "netcat": "nc -lvp %port%",
+  "ncat": "ncat -lvp %port%",
+  "fileVersion": "1",
+  "mcptoolBotVersion": "1",
+  "debug": false
+}
