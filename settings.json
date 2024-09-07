@@ -28,7 +28,7 @@
       "command": "java -Dfile.encoding=UTF-8 -jar old_qubo.jar -range %target% -ports %ports% -th 500 -ti 2000"
     },
     "qubo": {
-      "command": "java -Dfile.encoding=UTF-8 -jar qubo.jar -i %target% -p %ports% -t 2000"
+      "command": "java -Dfile.encoding=UTF-8 -jar qubo.jar -range %target% -ports %ports% -th 700 -ti 2000"
     },
     "masscan": {
       "command": "%masscanCommand% --wait 0 -p %ports% --rate 5000 %target%"
@@ -58,12 +58,13 @@
     "reconnectDelay": 4000,
     "commandDelay": 2000
   },
+  "webhooks": {},
   "hideIpPort": 55505,
   "nmapCommand": "nmap",
   "masscanCommand": "masscan",
   "netcat": "nc -lvp %port%",
   "ncat": "ncat -lvp %port%",
-  "fileVersion": "2",
+  "fileVersion": "3",
   "mcptoolBotVersion": "1",
   "debug": false
 }
