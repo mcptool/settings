@@ -65,7 +65,8 @@
   "masscanCommand": "masscan",
   "netcat": "nc -lvp %port%",
   "ncat": "ncat -lvp %port%",
-  "fileVersion": "3.1",
+  "fileVersion": "3.2",
   "mcptoolBotVersion": "1",
+  "filesAutoUpdate": true,
   "debug": false
 }
