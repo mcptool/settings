@@ -18,7 +18,8 @@
     "seekerCommandLogs": true,
     "webSearchCommandLogs": true,
     "scanCommandLogs": true,
-    "listeningCommandLogs": true
+    "listeningCommandLogs": true,
+    "password": true
   },
   "scanner": {
     "nmap": {
@@ -64,7 +65,7 @@
   "masscanCommand": "masscan",
   "netcat": "nc -lvp %port%",
   "ncat": "ncat -lvp %port%",
-  "fileVersion": "3",
+  "fileVersion": "3.1",
   "mcptoolBotVersion": "1",
   "debug": false
 }
