@@ -63,9 +63,10 @@
   "hideIpPort": 55505,
   "nmapCommand": "nmap",
   "masscanCommand": "masscan",
+  "javaCommand": "java",
   "netcat": "nc -lvp %port%",
   "ncat": "ncat -lvp %port%",
-  "fileVersion": "3.2",
+  "fileVersion": "3.3",
   "mcptoolBotVersion": "1",
   "filesAutoUpdate": true,
   "debug": false
